@@ -60,7 +60,7 @@ $movies = [
 	[
 		"title" => "Fight Club",
 		"release_year" => 1999,
-		"duration" => 139,
+		"duration" => 138,
 		"age_restriction" => 18,
 		"rating" => 8.8
 	],
