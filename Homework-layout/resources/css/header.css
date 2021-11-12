@@ -1,0 +1,85 @@
+.header-find{
+    margin: 20px 43px 51px 25px;
+}
+
+.header-find-str input[type=text]{
+position: absolute;
+width: 492px;
+height: 40px;
+left: 479px;
+top: 27px;
+Width: 492px;
+Height: 40px;
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 40px;
+border: 0;
+color: #999999;
+}
+
+.header-find-icon{
+position: absolute;
+width: 24px;
+height: 24px;
+left: 441px;
+top: 35px;
+}
+
+.header-find-button{
+font-family: 'Open Sans', sans-serif;
+    margin: 27px 343px 21px 0;
+    position: absolute;
+    width: 89px;
+    height: 40px;
+    left: 1233px;
+    top: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #E7A04E;
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	border-radius: 7px;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.header-add-button{
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	width: 158px;
+	height: 40px;
+	left: 1456px;
+	top: 26px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #4EE7B0;
+	width: 160px;
+	height: 40px;
+	border-radius: 7px;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.header-bottom{
+position: absolute;
+width: 777px;
+height: 1px;
+left: 441px;
+top: 66px;
+background: #C4C4C4;
+}

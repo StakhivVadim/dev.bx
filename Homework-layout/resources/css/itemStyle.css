@@ -1,0 +1,142 @@
+.movie-list--item{
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 700px;
+	margin: 15px;
+	Width: 370px;
+	background: #FFFFFF;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.movie-list--item-overlay{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	transition: 0.5s;
+
+	opacity: 0;
+}
+
+.movie-list--item:hover .movie-list--item-overlay{
+	opacity: 1;
+}
+.movie-list--item-overlay-more{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #4EE7B0;
+	width: 220px;
+	height: 56px;
+	border-radius: 7px;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.movie-list--item-image{
+	display: block;
+	height: 430px;
+	background: #000;
+	background-size: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+
+
+.movie-list--item-head{
+	display: block;
+	margin: 0 20px 0 20px;
+	padding: 12px 0 15px 0;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+.movie-list--item-title{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 30px;
+	color: #333333;
+}
+
+.movie-list--item-subtitle{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	color: #999999;
+}
+
+.movie-list--item-wrapper{
+position: absolute;
+Width: 330px;
+Height: 1px;
+Top: 518px;
+Left: 20px;
+	display: block;
+	height: 1px;
+}
+
+.movie-list--item-description{
+	min-height: 115px;
+	display: block;
+	margin: 0 20px 23px 20px;
+	overflow: auto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.movie-list--item-bottom{
+position: absolute;
+Width:330px;
+Height: 20px;
+Top: 670px;
+Left:20px;
+	display: flex;
+	white-space: nowrap;
+	justify-content: space-between;
+}
+.movie-list--item-bottom-time{
+	position: relative;
+	padding-left: 25px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 22px;
+	color: #CCCCCC;
+}
+
+.movie-list--item-bottom-time--icon{
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.movie-list--item-bottom-info{
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 22px;
+	text-align: right;
+	color: #CCCCCC;
+}

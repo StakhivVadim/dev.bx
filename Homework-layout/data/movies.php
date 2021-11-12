@@ -369,64 +369,44 @@ $movies = [
 		'age-restriction' => 16,
 		'release-date' => 2019,
 		'rating' => 8.0
-	]
-	];
-
-function getMoviesByGenre(array $movies,array $genres, string $code, array $result){
-	foreach ($movies as $movie)
-	{
-		if (isset($genres[$code]) && in_array($genres[$code], $movie['genres'], true))
-		{
-			array_push($result,$movie);
-		}
-	}
-	return $result;
-}
-
-function cutDescription(string $text, int $maxTextLength): string
-{
-	if (strlen($text) > $maxTextLength)
-	{
-		$text = mb_strimwidth($text,0,$maxTextLength,"...");
-	}
-	return $text;
-}
-
-function genreToStr(array $movie){
-	$str = implode(",",$movie['genres']);
-	return cutDescription($str ,20);;
-}
-
-function findSizeOfDecription(array $movie){
-	$maxTitleSizePerStr = 50;
-	if (strlen($movie['title'])>$maxTitleSizePerStr){
-		return cutDescription ($movie['description'],210);
-	}
-	else return cutDescription($movie['description'],270);
-}
-
-function timeChanger($movie){
-	 $hours = intdiv($movie['duration'],60);
-	 $mins = ($movie['duration']%60);
-	 if ($mins<10){
-		 return "0" . $hours . ":0" . $mins;
-	 }
-	 else return "0" . $hours . ":" . $mins;
-}
-
-
-
-foreach ($movies as $movie){
-	$prov = timeChanger($movie);
-	var_dump($prov);
-}
-
-
-
-function searchMovie($movies,){
-	foreach ($movies as $movie){
-		if($movie = 'more.php#'.$movie['original-title']){
-
-		}
-	}
-}
+	],
+	[
+		'id' => 28,
+		'title' => 'Дело храбрых',
+		'original-title' => 'Only the Brave',
+		'description' => 'История о команде пожарных под названием Granite Mountain Hotshots, столкнувшихся в Аризоне с одним из самых смертоносных пожаров в истории.',
+		'duration' => 134,
+		'genres' => ['Боевик', 'Драма', 'Биография'],
+		'cast' => ['Джош Бролин', 'Майлз Теллер'],
+		'director' => 'Джозеф Косински',
+		'age-restriction' => 16,
+		'release-date' => 2017,
+		'rating' => 8.0
+	],
+	[
+		'id' => 29,
+		'title' => 'Судья',
+		'original-title' => 'The Judge',
+		'description' => 'Успешный адвокат приезжает в родной город на похороны матери и узнаёт, что его отца, городского судью, подозревают в убийстве. Мужчина решает задержаться, чтобы выяснить правду, и постепенно лучше узнаёт родственников, с которыми давно не общался.',
+		'duration' => 142,
+		'genres' => ['Драма'],
+		'cast' => ['Роберт Дауни мл.', 'Роберт Дювалл'],
+		'director' => 'Дэвид Добкин',
+		'age-restriction' => 18,
+		'release-date' => 2014,
+		'rating' => 7.9
+	],
+	[
+		'id' => 30,
+		'title' => 'Исчезнувшая',
+		'original-title' => 'Gone Girl',
+		'description' => 'Всё было готово для празднования пятилетия супружеской жизни, когда вдруг необъяснимо пропала виновница торжества. Остались следы борьбы в доме, кровь, которую явно пытались стереть, и цепочка подсказок в игре «охота за сокровищами» - жена ежегодно устраивала её для своего обожаемого мужа. И похоже, что эти подсказки дают шанс пролить свет на судьбу исчезнувшей.',
+		'duration' => 149,
+		'genres' => ['Триллер', 'Драма'],
+		'cast' => ['Бен Аффлек', 'Розамунд Пайк', 'Нил Патрик Харрис'],
+		'director' => 'Дэвид Финчер',
+		'age-restriction' => 16,
+		'release-date' => 2014,
+		'rating' => 8.0
+	],
+];

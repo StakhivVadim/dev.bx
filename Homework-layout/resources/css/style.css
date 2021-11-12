@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-
-
-
 .wrapper {
 	display: flex;
 	overflow: hidden;
@@ -9,15 +5,17 @@
 }
 
 .sidebar {
+	position: relative;
 	display: block;
 	width: 400px;
+	overflow: auto;
 	background: #383838;
 }
 
 .container {
 	display: flex;
 	flex: 1;
-	background: chartreuse;
+	background: #fffddc;
 	flex-direction: column;
 }
 
@@ -25,6 +23,7 @@
 	height: 90px;
 	background: #FFFFFF;
 	box-shadow:0 4px 10px black;
+	margin-bottom: 16px;
 }
 
 .content {
@@ -35,7 +34,23 @@
 
 .menu {
 	display: block;
-	margin: 0 30px;
+	margin: 170px 30px;
+}
+
+.menu-logo{
+	position: absolute;
+	width: 210px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+	background: #383838;
+}
+.menu-logo-icon{
+	position: absolute;
+	width: 210.7px;
+	height: 67.2px;
+	left: 93px;
+	top: 59px;
 }
 
 .menu-item{
@@ -63,8 +78,8 @@
 	border: none;
 }
 
-.menu-item--active a,
-.menu-item a:hover{
+.menu-item-link.active,
+.menu-item-link:hover{
 	color: #fff;
 	background: rgba(255, 255, 255, 0.05);
 }
