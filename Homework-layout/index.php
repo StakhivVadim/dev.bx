@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 /** @var array $movies */
 /** @var array $genres */
 /** @var array $config */
@@ -9,14 +9,18 @@ require_once "./lib/helper-functions.php";
 require_once "./lib/template-functions.php";
 require_once "./lib/movies-function.php";
 
-$movies = checkFilter($movies,$genres);
+if (isset ($_GET['genre']))
+{
+	$status = $_GET['genre'];
+	$movies = getMoviesByGenre($movies, $genres, $status);
+}
 
 $moviesListPage = renderTemplate("./resources/pages/moviesList.php", [
-	'movies' => $movies
+	'movies' => $movies,
 ]);
 
 renderLayout($moviesListPage, [
 	'config' => $config,
-	'currentPage' => getFileName(__FILE__)
+	'currentPage' => getFileName(__FILE__),
 ]);
 ?>

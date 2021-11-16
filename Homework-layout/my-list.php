@@ -11,10 +11,10 @@ require_once "./lib/template-functions.php";
 require_once "./lib/movies-function.php";
 
 $moviesListPage = renderTemplate("./resources/pages/moviesList.php", [
-	'movies' => $movies
+	'movies' => $movies,
 ]);
 
 renderLayout('COMING SOON...', [
 	'config' => $config,
-	'currentPage' => getFileName(__FILE__)
+	'currentPage' => getFileName(__FILE__),
 ]);

@@ -10,11 +10,16 @@ require_once "./lib/helper-functions.php";
 require_once "./lib/template-functions.php";
 require_once "./lib/movies-function.php";
 
-$moviesListPage = renderTemplate("./resources/pages/moviesList.php", [
-	'movies' => $movies
-]);
+if (isset ($_GET['movie']))
+{
+	$status = $_GET['movie'];
+	$movies = movie_search($status, $movies);
+	$moviePage = renderTemplate("./resources/pages/moreLayout.php", [
+		'movies' => $movies,
+	]);
+}
 
-renderLayout(, [
+renderLayout($moviePage, [
 	'config' => $config,
-	'currentPage' => getFileName(__FILE__)
+	'currentPage' => getFileName(__FILE__),
 ]);

@@ -15,14 +15,14 @@
 .container {
 	display: flex;
 	flex: 1;
-	background: #fffddc;
+	background: #F2F2F2;
 	flex-direction: column;
 }
 
 .header {
 	height: 90px;
 	background: #FFFFFF;
-	box-shadow:0 4px 10px black;
+	box-shadow:0 4px 4px rgba(0, 0, 0, 0.05);
 	margin-bottom: 16px;
 }
 

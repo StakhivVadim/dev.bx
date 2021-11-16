@@ -45,7 +45,8 @@
 		</div>
 		<div class="content">
 			<div class="movie-list"></div>
-			<?php foreach ($movies as $movie): ?>
+			<?php
+			foreach ($movies as $movie): ?>
 				<div class="movie-list--item">
 					<div class="movie-list--item-overlay">
 						<a href="#" class="movie-list--item-overlay-more">Подробнее</a>
@@ -62,11 +63,14 @@
 							<div class="movie-list--item-bottom-time--icon"></div>
 							<?= $movie['duration'] ?></div>
 						<div class="movie-list--item-bottom-info">
-							<?php foreach ($movie['genres'] as $movie['genre']): ?><?= $movie['genre'] ?>
-							<?php endforeach; ?></div>
+							<?php
+							foreach ($movie['genres'] as $movie['genre']): ?><?= $movie['genre'] ?>
+							<?php
+							endforeach; ?></div>
 					</div>
 				</div>
-			<?php endforeach; ?>
+			<?php
+			endforeach; ?>
 		</div>
 
 	</div>
