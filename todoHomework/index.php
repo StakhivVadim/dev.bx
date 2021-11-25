@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>To-do</title>
-	<link rel="stylesheet" type="text/css" href="asset/style.css">
+	<link rel="stylesheet" type="text/css" href="/todoHomework/asset/style.css">
 	<script type="module" src="/todoHomework/asset/todo/list.js"></script>
 	<script type="module" src="/todoHomework/asset/todo/item.js"></script>
 </head>

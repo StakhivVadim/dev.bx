@@ -166,7 +166,7 @@ export class List
 			}
 			this.startProgress();
 			return fetch(
-				'/ajax.php?action=load',
+				'/todoHomework/ajax.php?action=load',
 				{
 					method: 'POST',
 				},
@@ -206,7 +206,7 @@ export class List
 			});
 
 			return fetch(
-				'/ajax.php?action=save',
+				'/todoHomework/ajax.php?action=save',
 				{
 					method: 'POST',
 					headers: {
